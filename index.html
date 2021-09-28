@@ -4,31 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet"> 
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 </head>
 <body>
 
-  Features
-  Pricing
-  Resources
+  <div class="half-color-section">
 
-  Login
-  Sign Up
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+          <img src="images/logo.svg">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Resources</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Login</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  More than just shorter links
+  <!-- Hero Section -->
 
-  Build your brand’s recognition and get detailed insights 
-  on how your links are performing.
+    <div class="hero">
+      <div class="container-fluid row">
+        <div class="hero-text col-lg-6">
+          <h1>More than just shorter links</h1>
+          <p>Build your brand’s recognition and get detailed insights 
+            on how your links are performing.</p>
+          <button class="btn">Get Started</button>
+        </div>
+        <div class="hero-img col-lg-6">
+          <img src="images/illustration-working.svg" alt="Picture of a person working on a desk">
+        </div>
+      </div>
+    </div>
 
-  Get Started
+  </div>
+
+    
+
+  <!--
   
   Shorten a link here...
 
@@ -76,10 +120,18 @@
   Our Team
   Careers
   Contact
-  
+      -->
+
+      <!--
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="index.js"></script>
 </body>
 </html>
