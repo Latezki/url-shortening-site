@@ -4,10 +4,6 @@
     padding: 0;
 }
 
-.container-fluid {
-    margin: 0 8%;
-}
-
 .btn {
    background-color: hsl(180, 66%, 49%);
    color: #fff;
@@ -17,10 +13,15 @@
 .row {
     padding-left: 0;
     padding-right: 0;
+    margin: 0;
 }
 
-.half-color-section {
-    background: linear-gradient(to bottom, #fff 50%, #f0f0f0 50%);
+.section-setting {
+    margin: 0 8%;
+}
+
+.gray-background {
+    background-color: #f0f0f0;
 }
 
 /* Navbar */
@@ -63,10 +64,66 @@ nav {
 }
 
 .hero-img img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .hero-text button {
     padding: 10px 36px;
     margin-top: 16px;
+}
+
+/* URL Shortening */
+
+.url-shortening {
+    margin-top: 5%;
+}
+
+.form-div {
+    background: linear-gradient(to bottom, #fff 50%, #f0f0f0 50%);
+}
+
+.url-form {
+    padding: 3% 2%;
+    background-color: hsl(257, 27%, 26%);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.link-text {
+    width: 78%;
+    height: 45px;
+    border-radius: 5px;
+    text-indent: 25px;
+}
+
+.submit-btn {
+    width: 17%;
+    height: 45px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: hsl(180, 66%, 49%);
+    color: #fff;
+}
+
+/* Features */
+
+.features {
+    background-color: #f0f0f0;
+    padding: 8%;
+}
+
+.features-text {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.features-text h2 {
+    font-weight: 700;
+}
+
+.features-text p {
+    color: hsl(0, 0%, 75%);
+    font-weight: 500;
+    margin-top: 15px;
 }
