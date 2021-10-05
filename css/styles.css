@@ -2,6 +2,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
 
 .btn {
@@ -27,13 +36,12 @@
 /* Navbar */
 
 nav {
-    margin: 2% 0;
+    margin: 3% 8%;
 }
 
 .nav-item {
-    margin-left: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    margin-left: 20px;   
+    font-weight: 700;
     font-size: 16px;
 }
 
@@ -48,7 +56,6 @@ nav {
 }
 
 .hero-text {
-    font-family: 'Poppins', sans-serif;
     margin: auto 0; 
 }
 
@@ -83,24 +90,25 @@ nav {
 }
 
 .url-form {
-    padding: 3% 2%;
+    padding: 4% 3%;
     background-color: hsl(257, 27%, 26%);
     text-align: center;
-    border-radius: 5px;
+    border-radius: 10px;
+    background-image: url("../images/bg-shorten-desktop.svg");
 }
 
 .link-text {
     width: 78%;
-    height: 45px;
-    border-radius: 5px;
+    height: 50px;
+    border-radius: 10px;
     text-indent: 25px;
 }
 
 .submit-btn {
     width: 17%;
-    height: 45px;
+    height: 50px;
     margin-left: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: hsl(180, 66%, 49%);
     color: #fff;
 }
@@ -108,14 +116,13 @@ nav {
 /* Features */
 
 .features {
-    background-color: #f0f0f0;
-    padding: 8%;
+    padding: 10% 0;
 }
 
 .features-text {
     text-align: center;
-    width: 75%;
     margin: 0 auto;
+    width: 50%;
 }
 
 .features-text h2 {
@@ -127,3 +134,112 @@ nav {
     font-weight: 500;
     margin-top: 15px;
 }
+
+.feature-row {
+    margin-top: 120px;
+}
+
+.feature-card {
+    border-radius: 5px;
+    border: none;
+    padding: 26px 35px
+}
+
+.feature-card h3 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 45px;
+}
+
+.feature-card p {
+    color: hsl(0, 0%, 75%);
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.icon-div {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -40px;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Call To Action */
+
+.call-to-action {
+    padding: 5% 0;
+    background-color: hsl(257, 27%, 26%);
+    text-align: center;
+    justify-content: center;
+    background-image: url("../images/bg-boost-desktop.svg");
+}
+
+.call-to-action h2 {
+    color: #fff;
+    font-weight: 700;
+}
+
+.call-to-action button {
+    margin-top: 20px;
+    padding: 10px 35px;
+}
+
+/* Footer */
+
+.footer {
+    padding: 5% 0;
+    background-color: hsl(255, 11%, 22%);
+}
+
+.footer-div {
+    display: flex;
+    margin: 0 10%;
+}
+
+.footer h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.list-div {
+    display: flex;
+    margin-left: auto;
+}
+
+.footer-list {
+    color: #fff;
+    margin-left: 70px;
+}
+
+.footer-list ul {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+.footer-list li {
+    color: hsl(0, 0%, 75%);
+    margin-top: 10px;
+}
+
+.footer-icon-list {
+    margin-left: 60px;
+    display: flex;
+}
+
+.footer-icon {
+    margin-left: 20px;
+}
+
