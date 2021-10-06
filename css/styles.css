@@ -95,6 +95,8 @@ nav {
     text-align: center;
     border-radius: 10px;
     background-image: url("../images/bg-shorten-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 125%;
 }
 
 .link-text {
@@ -102,6 +104,7 @@ nav {
     height: 50px;
     border-radius: 10px;
     text-indent: 25px;
+    font-weight: 500;
 }
 
 .submit-btn {
@@ -109,8 +112,52 @@ nav {
     height: 50px;
     margin-left: 10px;
     border-radius: 10px;
+    border: none;
     background-color: hsl(180, 66%, 49%);
     color: #fff;
+    font-weight: 500;
+}
+
+.link-div {
+    padding-top: 5px;
+}
+
+.link-list-div ul {
+    margin: 0;
+    padding: 0;
+}
+
+.link-list-div li {
+    margin-top: 15px;
+    padding: 18px 25px;
+    background-color: #fff;
+    display: flex; 
+    border-radius: 5px;
+}
+
+.website-link {
+    margin: auto 0;
+    font-weight: 500;
+    font-size: 18px
+}
+
+.shortened-link {
+    margin: auto 0 auto auto;
+    font-weight: 500;
+    font-size: 18px;
+    color: hsl(180, 66%, 49%);
+}
+
+.copy-button {
+    margin-left: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(180, 66%, 49%);
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 /* Features */
@@ -183,6 +230,8 @@ nav {
     text-align: center;
     justify-content: center;
     background-image: url("../images/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 125%;
 }
 
 .call-to-action h2 {
