@@ -1,13 +1,36 @@
 const linkForm = document.getElementById("linkForm");
 const linkList = document.getElementById("linkList");
+const urlInput = document.getElementById("inputText");
+const formWarning = document.getElementById("formWarning");
+
+const linkArray =[];
+var linkItems = JSON.parse(localStorage.getItem("links"));
+
+window.addEventListener("load", function() {
+    for (let i=0; i<linkItems.length; i++) {
+        const li = document.createElement("li");
+        li.innerHTML = linkItems[i];
+        linkList.appendChild(li);
+        linkArray.push(li.innerHTML);
+    }
+    localStorage.setItem("links", JSON.stringify(linkArray));
+});
 
 linkForm.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    const urlName = document.getElementById("link-text").value;
+    const urlName = urlInput.value.toLowerCase();
     console.log(urlName);
 
-    newLink(urlName);
+    if (urlName.includes(".") && urlName.length > 5 && urlName.match("^[a-z0-9.]+$")) {
+        newLink(urlName);
+        resetForm();
+        formWarning.style.visibility = "hidden";
+        urlInput.classList.remove("warning-border");
+    } else {
+        formWarning.style.visibility = "visible";
+        urlInput.classList.add("warning-border");
+    }
 });
 
 async function newLink(urlName) {
@@ -27,5 +50,12 @@ async function newLink(urlName) {
         li.appendChild(shortLink);
         li.appendChild(button);
         linkList.appendChild(li);
+        
+        linkArray.push(li.innerHTML);
+        localStorage.setItem("links", JSON.stringify(linkArray));
     });
+}
+
+function resetForm() {
+    urlInput.value = "";
 }
