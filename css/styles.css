@@ -17,6 +17,14 @@ li {
    background-color: hsl(180, 66%, 49%);
    color: #fff;
    border-radius: 25px;
+   border: none;
+   transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: hsl(180, 53%, 64%);
+    color: #fff;
+    transition: 0.4s;
 }
 
 .row {
@@ -43,6 +51,16 @@ nav {
     margin-left: 20px;   
     font-weight: 700;
     font-size: 16px;
+}
+
+.nav-link {
+    color:  hsl(0, 0%, 75%) !important;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    color: #000 !important;
+    transition: 0.4s;
 }
 
 .nav-item button {
@@ -74,7 +92,6 @@ nav {
     .sign-up-item {
         border: none;
     }
-
 }
 
 /* Hero */
@@ -124,7 +141,6 @@ nav {
         font-size: 22px;
         border-radius: 45px;
     }
-
 }
 
 /* URL Shortening */
@@ -178,6 +194,12 @@ nav {
     background-color: hsl(180, 66%, 49%);
     color: #fff;
     font-weight: 500;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: hsl(180, 53%, 64%);
+    transition: 0.4s;
 }
 
 .form-warning {
@@ -228,6 +250,10 @@ nav {
     color: #fff;
     font-weight: 500;
     font-size: 14px;
+}
+
+.copy-button:hover {
+    background-color: hsl(180, 53%, 64%);
 }
 
 .copied-button {
@@ -400,7 +426,6 @@ nav {
         font-size: 22px;
         border-radius: 45px;
     }
-
 }
 
 /* Footer */
@@ -440,6 +465,12 @@ nav {
 .footer-list li {
     color: hsl(0, 0%, 75%);
     margin-top: 10px;
+    transition: 0.2s;
+}
+
+.footer-list li:hover {
+    color: hsl(180, 66%, 49%);
+    transition: 0.3s;
 }
 
 .footer-icon-list {
@@ -450,7 +481,6 @@ nav {
 .footer-icon {
     margin-left: 20px;
 }
-
 
 @media only screen and (max-width: 991px) {
     
@@ -478,5 +508,4 @@ nav {
     .footer-icon:first-child {
         margin-left: 0;
     }
-
 }
