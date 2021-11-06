@@ -203,11 +203,10 @@ nav {
 }
 
 .form-warning {
-    display: block;
+    display: none;
     color: #ff6961;
     float: left;
     margin: 0;
-    visibility: hidden;
 }
 
 .link-div {
@@ -301,6 +300,18 @@ nav {
     .shortened-link {
         font-size: 20px;
         margin-top: 10px;
+    }
+
+    .copy-button {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .copied-button {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 100%;
     }
 }
 
